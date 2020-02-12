@@ -11,7 +11,7 @@ export class FirstComponent extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.setState({ loading: false });
         setTimeout( () => {
             Axios.get("https://randomuser.me/api/?results=50").then(response => {
